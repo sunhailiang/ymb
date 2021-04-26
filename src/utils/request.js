@@ -1,13 +1,13 @@
 import axios from 'axios'
 import baseUrl from '../api/env'
 import Vue from 'vue'
-let bus = new Vue()
+const bus = new Vue()
 const service = axios.create({
   validateStatus(status) {
     return status >= 200 && status <= 504 // 合法状态码
   },
   baseURL: baseUrl, // 基础请求路径
-  timeout: 15000, // 请求超时
+  timeout: 15000 // 请求超时
 })
 
 // 重复尝试此时
@@ -38,7 +38,7 @@ service.interceptors.request.use(
   (error) => {
     console.log('错误？？', error)
     const {
-      response: { status, statusText },
+      response: { status, statusText }
     } = error
 
     // 弹出错误信息
@@ -55,7 +55,7 @@ service.interceptors.response.use(
       if (response.data.errcode !== 200) {
         Notification.error({
           message: response.data.errcode,
-          description: response.data.errmsg,
+          description: response.data.errmsg
         })
         return Promise.reject(response.data.errmsg)
       } else {
@@ -77,7 +77,7 @@ service.interceptors.response.use(
       if (response.data.errcode !== 200) {
         Notification.error({
           message: response.data.errcode,
-          description: response.data.errmsg,
+          description: response.data.errmsg
         })
         return Promise.reject(response.data.errmsg)
       } else {

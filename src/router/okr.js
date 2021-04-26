@@ -3,5 +3,5 @@ export default {
   name: 'okr',
   component: () => {
     return import(/* webpackChunkName: "user" */ '../views/okr')
-  },
+  }
 }

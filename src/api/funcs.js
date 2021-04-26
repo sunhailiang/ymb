@@ -8,5 +8,5 @@ const GETUSERINFO = () => {
 }
 // 导出基础请求函数
 export default {
-  GETUSERINFO,
+  GETUSERINFO
 }

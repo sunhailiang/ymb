@@ -1,777 +1,777 @@
 // 文本超长
 .too-long(@num) {
-	@media screen and (min-width: 0px) and (max-width: 1280px) {
-		width: @num*0.66px;
-	}
+  @media screen and (min-width: 0px) and (max-width: 1280px) {
+    width: @num*0.66px;
+  }
 
-	@media screen and (min-width: 1280px) {
-		width: @num*0.66px;
-	}
+  @media screen and (min-width: 1280px) {
+    width: @num*0.66px;
+  }
 
-	@media screen and (min-width: 1366px) {
-		width: @num*0.71px;
-	}
+  @media screen and (min-width: 1366px) {
+    width: @num*0.71px;
+  }
 
-	@media screen and (min-width: 1440px) {
-		width: @num*0.75px;
-	}
+  @media screen and (min-width: 1440px) {
+    width: @num*0.75px;
+  }
 
-	@media screen and (min-width: 1920px) {
-		width: @num*1px;
-	}
+  @media screen and (min-width: 1920px) {
+    width: @num*1px;
+  }
 
-	overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 // 文本几行显示省略号
 .text-n(@num) {
-	word-break: break-all;
-	text-overflow: ellipsis;
-	display: -webkit-box;
-	-webkit-box-orient: vertical;
-	-webkit-line-clamp: @num;
-	overflow: hidden;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: @num;
+  overflow: hidden;
 }
 
 // 最小宽
 .min-w(@num) {
-	@media screen and (min-width: 0px) and (max-width: 1280px) {
-		min-width: @num*0.66px;
-	}
+  @media screen and (min-width: 0px) and (max-width: 1280px) {
+    min-width: @num*0.66px;
+  }
 
-	@media screen and (min-width: 1280px) {
-		min-width: @num*0.66px;
-	}
+  @media screen and (min-width: 1280px) {
+    min-width: @num*0.66px;
+  }
 
-	@media screen and (min-width: 1366px) {
-		min-width: @num*0.71px;
-	}
+  @media screen and (min-width: 1366px) {
+    min-width: @num*0.71px;
+  }
 
-	@media screen and (min-width: 1440px) {
-		min-width: @num*0.75px;
-	}
+  @media screen and (min-width: 1440px) {
+    min-width: @num*0.75px;
+  }
 
-	@media screen and (min-width: 1920px) {
-		min-width: @num*1px;
-	}
+  @media screen and (min-width: 1920px) {
+    min-width: @num*1px;
+  }
 }
 
 //最大宽度
 .max-w(@num) {
-	@media screen and (min-width: 0px) and (max-width: 1280px) {
-		max-width: @num*0.66px;
-	}
+  @media screen and (min-width: 0px) and (max-width: 1280px) {
+    max-width: @num*0.66px;
+  }
 
-	@media screen and (min-width: 1280px) {
-		max-width: @num*0.66px;
-	}
+  @media screen and (min-width: 1280px) {
+    max-width: @num*0.66px;
+  }
 
-	@media screen and (min-width: 1366px) {
-		max-width: @num*0.71px;
-	}
+  @media screen and (min-width: 1366px) {
+    max-width: @num*0.71px;
+  }
 
-	@media screen and (min-width: 1440px) {
-		max-width: @num*0.75px;
-	}
+  @media screen and (min-width: 1440px) {
+    max-width: @num*0.75px;
+  }
 
-	@media screen and (min-width: 1920px) {
-		max-width: @num*1px;
-	}
+  @media screen and (min-width: 1920px) {
+    max-width: @num*1px;
+  }
 }
 
 //最小高度
 .min-h(@num) {
-	@media screen and (min-width: 0px) and (max-width: 1280px) {
-		min-height: @num*0.66px;
-	}
+  @media screen and (min-width: 0px) and (max-width: 1280px) {
+    min-height: @num*0.66px;
+  }
 
-	@media screen and (min-width: 1280px) {
-		min-height: @num*0.66px;
-	}
+  @media screen and (min-width: 1280px) {
+    min-height: @num*0.66px;
+  }
 
-	@media screen and (min-width: 1366px) {
-		min-height: @num*0.71px;
-	}
+  @media screen and (min-width: 1366px) {
+    min-height: @num*0.71px;
+  }
 
-	@media screen and (min-width: 1440px) {
-		min-height: @num*0.75px;
-	}
+  @media screen and (min-width: 1440px) {
+    min-height: @num*0.75px;
+  }
 
-	@media screen and (min-width: 1920px) {
-		min-height: @num*1px;
-	}
+  @media screen and (min-width: 1920px) {
+    min-height: @num*1px;
+  }
 }
 
 //最大高度
 .max-h(@num) {
-	@media screen and (min-width: 0px) and (max-width: 1280px) {
-		max-height: @num*0.66px;
-	}
+  @media screen and (min-width: 0px) and (max-width: 1280px) {
+    max-height: @num*0.66px;
+  }
 
-	@media screen and (min-width: 1280px) {
-		max-height: @num*0.66px;
-	}
+  @media screen and (min-width: 1280px) {
+    max-height: @num*0.66px;
+  }
 
-	@media screen and (min-width: 1366px) {
-		max-height: @num*0.71px;
-	}
+  @media screen and (min-width: 1366px) {
+    max-height: @num*0.71px;
+  }
 
-	@media screen and (min-width: 1440px) {
-		max-height: @num*0.75px;
-	}
+  @media screen and (min-width: 1440px) {
+    max-height: @num*0.75px;
+  }
 
-	@media screen and (min-width: 1920px) {
-		max-height: @num*1px;
-	}
+  @media screen and (min-width: 1920px) {
+    max-height: @num*1px;
+  }
 }
 
 // 宽度
 .w(@num) {
-	@media screen and (min-width: 0px) and (max-width: 1280px) {
-		width: @num*0.66px;
-	}
+  @media screen and (min-width: 0px) and (max-width: 1280px) {
+    width: @num*0.66px;
+  }
 
-	@media screen and (min-width: 1280px) {
-		width: @num*0.66px;
-	}
+  @media screen and (min-width: 1280px) {
+    width: @num*0.66px;
+  }
 
-	@media screen and (min-width: 1366px) {
-		width: @num*0.71px;
-	}
+  @media screen and (min-width: 1366px) {
+    width: @num*0.71px;
+  }
 
-	@media screen and (min-width: 1440px) {
-		width: @num*0.75px;
-	}
+  @media screen and (min-width: 1440px) {
+    width: @num*0.75px;
+  }
 
-	@media screen and (min-width: 1920px) {
-		width: @num*1px;
-	}
+  @media screen and (min-width: 1920px) {
+    width: @num*1px;
+  }
 }
 // 宽度
 .w-im(@num) {
-	@media screen and (min-width: 0px) and (max-width: 1280px) {
-		width: @num*0.66px !important;
-	}
+  @media screen and (min-width: 0px) and (max-width: 1280px) {
+    width: @num*0.66px !important;
+  }
 
-	@media screen and (min-width: 1280px) {
-		width: @num*0.66px !important;
-	}
+  @media screen and (min-width: 1280px) {
+    width: @num*0.66px !important;
+  }
 
-	@media screen and (min-width: 1366px) {
-		width: @num*0.71px !important;
-	}
+  @media screen and (min-width: 1366px) {
+    width: @num*0.71px !important;
+  }
 
-	@media screen and (min-width: 1440px) {
-		width: @num*0.75px !important;
-	}
+  @media screen and (min-width: 1440px) {
+    width: @num*0.75px !important;
+  }
 
-	@media screen and (min-width: 1920px) {
-		width: @num*1px !important;
-	}
+  @media screen and (min-width: 1920px) {
+    width: @num*1px !important;
+  }
 }
 //  高度
 .h(@num) {
-	@media screen and (min-width: 0px) and (max-width: 1280px) {
-		height: @num*0.66px;
-	}
+  @media screen and (min-width: 0px) and (max-width: 1280px) {
+    height: @num*0.66px;
+  }
 
-	@media screen and (min-width: 1280px) {
-		height: @num*0.66px;
-	}
+  @media screen and (min-width: 1280px) {
+    height: @num*0.66px;
+  }
 
-	@media screen and (min-width: 1366px) {
-		height: @num*0.71px;
-	}
+  @media screen and (min-width: 1366px) {
+    height: @num*0.71px;
+  }
 
-	@media screen and (min-width: 1440px) {
-		height: @num*0.75px;
-	}
+  @media screen and (min-width: 1440px) {
+    height: @num*0.75px;
+  }
 
-	@media screen and (min-width: 1920px) {
-		height: @num*1px;
-	}
+  @media screen and (min-width: 1920px) {
+    height: @num*1px;
+  }
 }
 
 // 行高
 .lh(@num) {
-	@media screen and (min-width: 0px) and (max-width: 1280px) {
-		line-height: @num*0.66px;
-	}
+  @media screen and (min-width: 0px) and (max-width: 1280px) {
+    line-height: @num*0.66px;
+  }
 
-	@media screen and (min-width: 1280px) {
-		line-height: @num*0.66px;
-	}
+  @media screen and (min-width: 1280px) {
+    line-height: @num*0.66px;
+  }
 
-	@media screen and (min-width: 1366px) {
-		line-height: @num*0.71px;
-	}
+  @media screen and (min-width: 1366px) {
+    line-height: @num*0.71px;
+  }
 
-	@media screen and (min-width: 1440px) {
-		line-height: @num*0.75px;
-	}
+  @media screen and (min-width: 1440px) {
+    line-height: @num*0.75px;
+  }
 
-	@media screen and (min-width: 1920px) {
-		line-height: @num*1px;
-	}
+  @media screen and (min-width: 1920px) {
+    line-height: @num*1px;
+  }
 }
 
 // 内边距
 .pd(@num) {
-	@media screen and (min-width: 0px) and (max-width: 1280px) {
-		padding: @num*0.66px;
-	}
+  @media screen and (min-width: 0px) and (max-width: 1280px) {
+    padding: @num*0.66px;
+  }
 
-	@media screen and (min-width: 1280px) {
-		padding: @num*0.66px;
-	}
+  @media screen and (min-width: 1280px) {
+    padding: @num*0.66px;
+  }
 
-	@media screen and (min-width: 1366px) {
-		padding: @num*0.71px;
-	}
+  @media screen and (min-width: 1366px) {
+    padding: @num*0.71px;
+  }
 
-	@media screen and (min-width: 1440px) {
-		padding: @num*0.75px;
-	}
+  @media screen and (min-width: 1440px) {
+    padding: @num*0.75px;
+  }
 
-	@media screen and (min-width: 1920px) {
-		padding: @num*1px;
-	}
+  @media screen and (min-width: 1920px) {
+    padding: @num*1px;
+  }
 }
 
 .pa(@num1, @num2, @num3, @num4) {
-	@media screen and (min-width: 0px) and (max-width: 1280px) {
-		padding: @num1*0.66px @num2*0.66px @num3*0.66px @num4*0.66px;
-	}
+  @media screen and (min-width: 0px) and (max-width: 1280px) {
+    padding: @num1*0.66px @num2*0.66px @num3*0.66px @num4*0.66px;
+  }
 
-	@media screen and (min-width: 1280px) {
-		padding: @num1*0.66px @num2*0.66px @num3*0.66px @num4*0.66px;
-	}
+  @media screen and (min-width: 1280px) {
+    padding: @num1*0.66px @num2*0.66px @num3*0.66px @num4*0.66px;
+  }
 
-	@media screen and (min-width: 1366px) {
-		padding: @num1*0.71px @num2*0.71px @num3*0.71px @num4*0.71px;
-	}
+  @media screen and (min-width: 1366px) {
+    padding: @num1*0.71px @num2*0.71px @num3*0.71px @num4*0.71px;
+  }
 
-	@media screen and (min-width: 1440px) {
-		padding: @num1*0.75px @num2*0.75px @num3*0.75px @num4*0.75px;
-	}
+  @media screen and (min-width: 1440px) {
+    padding: @num1*0.75px @num2*0.75px @num3*0.75px @num4*0.75px;
+  }
 
-	@media screen and (min-width: 1920px) {
-		padding: @num1*1px @num2*1px @num3*1px @num4*1px;
-	}
+  @media screen and (min-width: 1920px) {
+    padding: @num1*1px @num2*1px @num3*1px @num4*1px;
+  }
 }
 
 .pl(@num) {
-	@media screen and (min-width: 0px) and (max-width: 1280px) {
-		padding-left: @num*0.66px;
-	}
+  @media screen and (min-width: 0px) and (max-width: 1280px) {
+    padding-left: @num*0.66px;
+  }
 
-	@media screen and (min-width: 1280px) {
-		padding-left: @num*0.66px;
-	}
+  @media screen and (min-width: 1280px) {
+    padding-left: @num*0.66px;
+  }
 
-	@media screen and (min-width: 1366px) {
-		padding-left: @num*0.71px;
-	}
+  @media screen and (min-width: 1366px) {
+    padding-left: @num*0.71px;
+  }
 
-	@media screen and (min-width: 1440px) {
-		padding-left: @num*0.75px;
-	}
+  @media screen and (min-width: 1440px) {
+    padding-left: @num*0.75px;
+  }
 
-	@media screen and (min-width: 1920px) {
-		padding-left: @num*1px;
-	}
+  @media screen and (min-width: 1920px) {
+    padding-left: @num*1px;
+  }
 }
 
 .pr(@num) {
-	@media screen and (min-width: 0px) and (max-width: 1280px) {
-		padding-right: @num*0.66px;
-	}
+  @media screen and (min-width: 0px) and (max-width: 1280px) {
+    padding-right: @num*0.66px;
+  }
 
-	@media screen and (min-width: 1280px) {
-		padding-right: @num*0.66px;
-	}
+  @media screen and (min-width: 1280px) {
+    padding-right: @num*0.66px;
+  }
 
-	@media screen and (min-width: 1366px) {
-		padding-right: @num*0.71px;
-	}
+  @media screen and (min-width: 1366px) {
+    padding-right: @num*0.71px;
+  }
 
-	@media screen and (min-width: 1440px) {
-		padding-right: @num*0.75px;
-	}
+  @media screen and (min-width: 1440px) {
+    padding-right: @num*0.75px;
+  }
 
-	@media screen and (min-width: 1920px) {
-		padding-right: @num*1px;
-	}
+  @media screen and (min-width: 1920px) {
+    padding-right: @num*1px;
+  }
 }
 
 .pt(@num) {
-	@media screen and (min-width: 0px) and (max-width: 1280px) {
-		padding-top: @num*0.66px;
-	}
+  @media screen and (min-width: 0px) and (max-width: 1280px) {
+    padding-top: @num*0.66px;
+  }
 
-	@media screen and (min-width: 1280px) {
-		padding-top: @num*0.66px;
-	}
+  @media screen and (min-width: 1280px) {
+    padding-top: @num*0.66px;
+  }
 
-	@media screen and (min-width: 1366px) {
-		padding-top: @num*0.71px;
-	}
+  @media screen and (min-width: 1366px) {
+    padding-top: @num*0.71px;
+  }
 
-	@media screen and (min-width: 1440px) {
-		padding-top: @num*0.75px;
-	}
+  @media screen and (min-width: 1440px) {
+    padding-top: @num*0.75px;
+  }
 
-	@media screen and (min-width: 1920px) {
-		padding-top: @num*1px;
-	}
+  @media screen and (min-width: 1920px) {
+    padding-top: @num*1px;
+  }
 }
 
 .pb(@num) {
-	@media screen and (min-width: 0px) and (max-width: 1280px) {
-		padding-bottom: @num*0.66px;
-	}
+  @media screen and (min-width: 0px) and (max-width: 1280px) {
+    padding-bottom: @num*0.66px;
+  }
 
-	@media screen and (min-width: 1280px) {
-		padding-bottom: @num*0.66px;
-	}
+  @media screen and (min-width: 1280px) {
+    padding-bottom: @num*0.66px;
+  }
 
-	@media screen and (min-width: 1366px) {
-		padding-bottom: @num*0.71px;
-	}
+  @media screen and (min-width: 1366px) {
+    padding-bottom: @num*0.71px;
+  }
 
-	@media screen and (min-width: 1440px) {
-		padding-bottom: @num*0.75px;
-	}
+  @media screen and (min-width: 1440px) {
+    padding-bottom: @num*0.75px;
+  }
 
-	@media screen and (min-width: 1920px) {
-		padding-bottom: @num*1px;
-	}
+  @media screen and (min-width: 1920px) {
+    padding-bottom: @num*1px;
+  }
 }
 
 // 外边距
 .mg-l(@num) {
-	@media screen and (min-width: 0px) and (max-width: 1280px) {
-		margin-left: @num*0.66px;
-	}
+  @media screen and (min-width: 0px) and (max-width: 1280px) {
+    margin-left: @num*0.66px;
+  }
 
-	@media screen and (min-width: 1280px) {
-		margin-left: @num*0.66px;
-	}
+  @media screen and (min-width: 1280px) {
+    margin-left: @num*0.66px;
+  }
 
-	@media screen and (min-width: 1366px) {
-		margin-left: @num*0.71px;
-	}
+  @media screen and (min-width: 1366px) {
+    margin-left: @num*0.71px;
+  }
 
-	@media screen and (min-width: 1440px) {
-		margin-left: @num*0.75px;
-	}
+  @media screen and (min-width: 1440px) {
+    margin-left: @num*0.75px;
+  }
 
-	@media screen and (min-width: 1920px) {
-		margin-left: @num*1px;
-	}
+  @media screen and (min-width: 1920px) {
+    margin-left: @num*1px;
+  }
 }
 
 .mg-t(@num) {
-	@media screen and (min-width: 0px) and (max-width: 1280px) {
-		margin-top: @num*0.66px;
-	}
+  @media screen and (min-width: 0px) and (max-width: 1280px) {
+    margin-top: @num*0.66px;
+  }
 
-	@media screen and (min-width: 1280px) {
-		margin-top: @num*0.66px;
-	}
+  @media screen and (min-width: 1280px) {
+    margin-top: @num*0.66px;
+  }
 
-	@media screen and (min-width: 1366px) {
-		margin-top: @num*0.71px;
-	}
+  @media screen and (min-width: 1366px) {
+    margin-top: @num*0.71px;
+  }
 
-	@media screen and (min-width: 1440px) {
-		margin-top: @num*0.75px;
-	}
+  @media screen and (min-width: 1440px) {
+    margin-top: @num*0.75px;
+  }
 
-	@media screen and (min-width: 1920px) {
-		margin-top: @num*1px;
-	}
+  @media screen and (min-width: 1920px) {
+    margin-top: @num*1px;
+  }
 }
 
 .mg-r(@num) {
-	@media screen and (min-width: 0px) and (max-width: 1280px) {
-		margin-right: @num*0.66px;
-	}
+  @media screen and (min-width: 0px) and (max-width: 1280px) {
+    margin-right: @num*0.66px;
+  }
 
-	@media screen and (min-width: 1280px) {
-		margin-right: @num*0.66px;
-	}
+  @media screen and (min-width: 1280px) {
+    margin-right: @num*0.66px;
+  }
 
-	@media screen and (min-width: 1366px) {
-		margin-right: @num*0.71px;
-	}
+  @media screen and (min-width: 1366px) {
+    margin-right: @num*0.71px;
+  }
 
-	@media screen and (min-width: 1440px) {
-		margin-right: @num*0.75px;
-	}
+  @media screen and (min-width: 1440px) {
+    margin-right: @num*0.75px;
+  }
 
-	@media screen and (min-width: 1920px) {
-		margin-right: @num*1px;
-	}
+  @media screen and (min-width: 1920px) {
+    margin-right: @num*1px;
+  }
 }
 
 .mg-b(@num) {
-	@media screen and (min-width: 0px) and (max-width: 1280px) {
-		margin-bottom: @num*0.66px;
-	}
+  @media screen and (min-width: 0px) and (max-width: 1280px) {
+    margin-bottom: @num*0.66px;
+  }
 
-	@media screen and (min-width: 1280px) {
-		margin-bottom: @num*0.66px;
-	}
+  @media screen and (min-width: 1280px) {
+    margin-bottom: @num*0.66px;
+  }
 
-	@media screen and (min-width: 1366px) {
-		margin-bottom: @num*0.71px;
-	}
+  @media screen and (min-width: 1366px) {
+    margin-bottom: @num*0.71px;
+  }
 
-	@media screen and (min-width: 1440px) {
-		margin-bottom: @num*0.75px;
-	}
+  @media screen and (min-width: 1440px) {
+    margin-bottom: @num*0.75px;
+  }
 
-	@media screen and (min-width: 1920px) {
-		margin-bottom: @num*1px;
-	}
+  @media screen and (min-width: 1920px) {
+    margin-bottom: @num*1px;
+  }
 }
 
 .mg(@num) {
-	@media screen and (min-width: 0px) and (max-width: 1280px) {
-		margin: @num*0.66px;
-	}
+  @media screen and (min-width: 0px) and (max-width: 1280px) {
+    margin: @num*0.66px;
+  }
 
-	@media screen and (min-width: 1280px) {
-		margin: @num*0.66px;
-	}
+  @media screen and (min-width: 1280px) {
+    margin: @num*0.66px;
+  }
 
-	@media screen and (min-width: 1366px) {
-		margin: @num*0.71px;
-	}
+  @media screen and (min-width: 1366px) {
+    margin: @num*0.71px;
+  }
 
-	@media screen and (min-width: 1440px) {
-		margin: @num*0.75px;
-	}
+  @media screen and (min-width: 1440px) {
+    margin: @num*0.75px;
+  }
 
-	@media screen and (min-width: 1920px) {
-		margin: @num*1px;
-	}
+  @media screen and (min-width: 1920px) {
+    margin: @num*1px;
+  }
 }
 
 .mg-t(@num, @num1) {
-	@media screen and (min-width: 0px) and (max-width: 1280px) {
-		margin: @num*0.66px @num1*0.66px;
-	}
+  @media screen and (min-width: 0px) and (max-width: 1280px) {
+    margin: @num*0.66px @num1*0.66px;
+  }
 
-	@media screen and (min-width: 1280px) {
-		margin: @num*0.66px @num1*0.66px;
-	}
+  @media screen and (min-width: 1280px) {
+    margin: @num*0.66px @num1*0.66px;
+  }
 
-	@media screen and (min-width: 1366px) {
-		margin: @num*0.71px @num1*0.71px;
-	}
+  @media screen and (min-width: 1366px) {
+    margin: @num*0.71px @num1*0.71px;
+  }
 
-	@media screen and (min-width: 1440px) {
-		margin: @num*0.75px @num1*0.75px;
-	}
+  @media screen and (min-width: 1440px) {
+    margin: @num*0.75px @num1*0.75px;
+  }
 
-	@media screen and (min-width: 1920px) {
-		margin: @num*1px @num1*1px;
-	}
+  @media screen and (min-width: 1920px) {
+    margin: @num*1px @num1*1px;
+  }
 }
 
 .mg-f(@num, @num1, @num2, @num3) {
-	@media screen and (min-width: 0px) and (max-width: 1280px) {
-		margin: @num*0.66px @num1*0.66px @num2*0.66px @num3*0.66px;
-	}
+  @media screen and (min-width: 0px) and (max-width: 1280px) {
+    margin: @num*0.66px @num1*0.66px @num2*0.66px @num3*0.66px;
+  }
 
-	@media screen and (min-width: 1280px) {
-		margin: @num*0.66px @num1*0.66px @num2*0.66px @num3*0.66px;
-	}
+  @media screen and (min-width: 1280px) {
+    margin: @num*0.66px @num1*0.66px @num2*0.66px @num3*0.66px;
+  }
 
-	@media screen and (min-width: 1366px) {
-		margin: @num*0.71px @num1*0.71px @num2*0.71px @num3*0.71px;
-	}
+  @media screen and (min-width: 1366px) {
+    margin: @num*0.71px @num1*0.71px @num2*0.71px @num3*0.71px;
+  }
 
-	@media screen and (min-width: 1440px) {
-		margin: @num*0.75px @num1*0.75px @num2*0.75px @num3*0.75px;
-	}
+  @media screen and (min-width: 1440px) {
+    margin: @num*0.75px @num1*0.75px @num2*0.75px @num3*0.75px;
+  }
 
-	@media screen and (min-width: 1920px) {
-		margin: @num*1px @num1*1px @num2*1px @num3*1px;
-	}
+  @media screen and (min-width: 1920px) {
+    margin: @num*1px @num1*1px @num2*1px @num3*1px;
+  }
 }
 
 // 定位
 .l(@num) {
-	@media screen and (min-width: 0px) and (max-width: 1280px) {
-		left: @num*0.66px;
-	}
+  @media screen and (min-width: 0px) and (max-width: 1280px) {
+    left: @num*0.66px;
+  }
 
-	@media screen and (min-width: 1280px) {
-		left: @num*0.66px;
-	}
+  @media screen and (min-width: 1280px) {
+    left: @num*0.66px;
+  }
 
-	@media screen and (min-width: 1366px) {
-		left: @num*0.71px;
-	}
+  @media screen and (min-width: 1366px) {
+    left: @num*0.71px;
+  }
 
-	@media screen and (min-width: 1440px) {
-		left: @num*0.75px;
-	}
+  @media screen and (min-width: 1440px) {
+    left: @num*0.75px;
+  }
 
-	@media screen and (min-width: 1920px) {
-		left: @num*1px;
-	}
+  @media screen and (min-width: 1920px) {
+    left: @num*1px;
+  }
 }
 
 .r(@num) {
-	@media screen and (min-width: 0px) and (max-width: 1280px) {
-		right: @num*0.66px;
-	}
+  @media screen and (min-width: 0px) and (max-width: 1280px) {
+    right: @num*0.66px;
+  }
 
-	@media screen and (min-width: 1280px) {
-		right: @num*0.66px;
-	}
+  @media screen and (min-width: 1280px) {
+    right: @num*0.66px;
+  }
 
-	@media screen and (min-width: 1366px) {
-		right: @num*0.71px;
-	}
+  @media screen and (min-width: 1366px) {
+    right: @num*0.71px;
+  }
 
-	@media screen and (min-width: 1440px) {
-		right: @num*0.75px;
-	}
+  @media screen and (min-width: 1440px) {
+    right: @num*0.75px;
+  }
 
-	@media screen and (min-width: 1920px) {
-		right: @num*1px;
-	}
+  @media screen and (min-width: 1920px) {
+    right: @num*1px;
+  }
 }
 
 .t(@num) {
-	@media screen and (min-width: 0px) and (max-width: 1280px) {
-		top: @num*0.66px;
-	}
+  @media screen and (min-width: 0px) and (max-width: 1280px) {
+    top: @num*0.66px;
+  }
 
-	@media screen and (min-width: 1280px) {
-		top: @num*0.66px;
-	}
+  @media screen and (min-width: 1280px) {
+    top: @num*0.66px;
+  }
 
-	@media screen and (min-width: 1366px) {
-		top: @num*0.71px;
-	}
+  @media screen and (min-width: 1366px) {
+    top: @num*0.71px;
+  }
 
-	@media screen and (min-width: 1440px) {
-		top: @num*0.75px;
-	}
+  @media screen and (min-width: 1440px) {
+    top: @num*0.75px;
+  }
 
-	@media screen and (min-width: 1920px) {
-		top: @num*1px;
-	}
+  @media screen and (min-width: 1920px) {
+    top: @num*1px;
+  }
 }
 
 .b(@num) {
-	@media screen and (min-width: 0px) and (max-width: 1280px) {
-		bottom: @num*0.66px;
-	}
+  @media screen and (min-width: 0px) and (max-width: 1280px) {
+    bottom: @num*0.66px;
+  }
 
-	@media screen and (min-width: 1280px) {
-		bottom: @num*0.66px;
-	}
+  @media screen and (min-width: 1280px) {
+    bottom: @num*0.66px;
+  }
 
-	@media screen and (min-width: 1366px) {
-		bottom: @num*0.71px;
-	}
+  @media screen and (min-width: 1366px) {
+    bottom: @num*0.71px;
+  }
 
-	@media screen and (min-width: 1440px) {
-		bottom: @num*0.75px;
-	}
+  @media screen and (min-width: 1440px) {
+    bottom: @num*0.75px;
+  }
 
-	@media screen and (min-width: 1920px) {
-		bottom: @num*1px;
-	}
+  @media screen and (min-width: 1920px) {
+    bottom: @num*1px;
+  }
 }
 
 // 边框
 .bd(@type, @size, @c) {
-	@media screen and (min-width: 0px) and (max-width: 1280px) {
-		border: @type @size*0.66px @c;
-	}
+  @media screen and (min-width: 0px) and (max-width: 1280px) {
+    border: @type @size*0.66px @c;
+  }
 
-	@media screen and (min-width: 1280px) {
-		border: @type @size*0.66px @c;
-	}
+  @media screen and (min-width: 1280px) {
+    border: @type @size*0.66px @c;
+  }
 
-	@media screen and (min-width: 1366px) {
-		border: @type @size*0.71px @c;
-	}
+  @media screen and (min-width: 1366px) {
+    border: @type @size*0.71px @c;
+  }
 
-	@media screen and (min-width: 1440px) {
-		border: @type @size*0.75px @c;
-	}
+  @media screen and (min-width: 1440px) {
+    border: @type @size*0.75px @c;
+  }
 
-	@media screen and (min-width: 1920px) {
-		border: @type @size*1px @c;
-	}
+  @media screen and (min-width: 1920px) {
+    border: @type @size*1px @c;
+  }
 }
 
 .bd-t(@type, @size, @c) {
-	@media screen and (min-width: 0px) and (max-width: 1280px) {
-		border-top: @type @size*0.66px @c;
-	}
+  @media screen and (min-width: 0px) and (max-width: 1280px) {
+    border-top: @type @size*0.66px @c;
+  }
 
-	@media screen and (min-width: 1280px) {
-		border-top: @type @size*0.66px @c;
-	}
+  @media screen and (min-width: 1280px) {
+    border-top: @type @size*0.66px @c;
+  }
 
-	@media screen and (min-width: 1366px) {
-		border-top: @type @size*0.71px @c;
-	}
+  @media screen and (min-width: 1366px) {
+    border-top: @type @size*0.71px @c;
+  }
 
-	@media screen and (min-width: 1440px) {
-		border-top: @type @size*0.75px @c;
-	}
+  @media screen and (min-width: 1440px) {
+    border-top: @type @size*0.75px @c;
+  }
 
-	@media screen and (min-width: 1920px) {
-		border-top: @type @size*1px @c;
-	}
+  @media screen and (min-width: 1920px) {
+    border-top: @type @size*1px @c;
+  }
 }
 
 .bd-r(@type, @size, @c) {
-	@media screen and (min-width: 0px) and (max-width: 1280px) {
-		border-right: @type @size*0.66px @c;
-	}
+  @media screen and (min-width: 0px) and (max-width: 1280px) {
+    border-right: @type @size*0.66px @c;
+  }
 
-	@media screen and (min-width: 1280px) {
-		border-right: @type @size*0.66px @c;
-	}
+  @media screen and (min-width: 1280px) {
+    border-right: @type @size*0.66px @c;
+  }
 
-	@media screen and (min-width: 1366px) {
-		border-right: @type @size*0.71px @c;
-	}
+  @media screen and (min-width: 1366px) {
+    border-right: @type @size*0.71px @c;
+  }
 
-	@media screen and (min-width: 1440px) {
-		border-right: @type @size*0.75px @c;
-	}
+  @media screen and (min-width: 1440px) {
+    border-right: @type @size*0.75px @c;
+  }
 
-	@media screen and (min-width: 1920px) {
-		border-right: @type @size*1px @c;
-	}
+  @media screen and (min-width: 1920px) {
+    border-right: @type @size*1px @c;
+  }
 }
 
 .bd-l(@type, @size, @c) {
-	@media screen and (min-width: 0px) and (max-width: 1280px) {
-		border-left: @type @size*0.66px @c;
-	}
+  @media screen and (min-width: 0px) and (max-width: 1280px) {
+    border-left: @type @size*0.66px @c;
+  }
 
-	@media screen and (min-width: 1280px) {
-		border-left: @type @size*0.66px @c;
-	}
+  @media screen and (min-width: 1280px) {
+    border-left: @type @size*0.66px @c;
+  }
 
-	@media screen and (min-width: 1366px) {
-		border-left: @type @size*0.71px @c;
-	}
+  @media screen and (min-width: 1366px) {
+    border-left: @type @size*0.71px @c;
+  }
 
-	@media screen and (min-width: 1440px) {
-		border-left: @type @size*0.75px @c;
-	}
+  @media screen and (min-width: 1440px) {
+    border-left: @type @size*0.75px @c;
+  }
 
-	@media screen and (min-width: 1920px) {
-		border-left: @type @size*1px @c;
-	}
+  @media screen and (min-width: 1920px) {
+    border-left: @type @size*1px @c;
+  }
 }
 
 .bd-b(@type, @size, @c) {
-	@media screen and (min-width: 0px) and (max-width: 1280px) {
-		border-bottom: @type @size*0.66px @c;
-	}
+  @media screen and (min-width: 0px) and (max-width: 1280px) {
+    border-bottom: @type @size*0.66px @c;
+  }
 
-	@media screen and (min-width: 1280px) {
-		border-bottom: @type @size*0.66px @c;
-	}
+  @media screen and (min-width: 1280px) {
+    border-bottom: @type @size*0.66px @c;
+  }
 
-	@media screen and (min-width: 1366px) {
-		border-bottom: @type @size*0.71px @c;
-	}
+  @media screen and (min-width: 1366px) {
+    border-bottom: @type @size*0.71px @c;
+  }
 
-	@media screen and (min-width: 1440px) {
-		border-bottom: @type @size*0.75px @c;
-	}
+  @media screen and (min-width: 1440px) {
+    border-bottom: @type @size*0.75px @c;
+  }
 
-	@media screen and (min-width: 1920px) {
-		border-bottom: @type @size*1px @c;
-	}
+  @media screen and (min-width: 1920px) {
+    border-bottom: @type @size*1px @c;
+  }
 }
 
 .bd-r(@num) {
-	@media screen and (min-width: 0px) and (max-width: 1280px) {
-		border-radius: @num*0.66px;
-	}
+  @media screen and (min-width: 0px) and (max-width: 1280px) {
+    border-radius: @num*0.66px;
+  }
 
-	@media screen and (min-width: 1280px) {
-		border-radius: @num*0.66px;
-	}
+  @media screen and (min-width: 1280px) {
+    border-radius: @num*0.66px;
+  }
 
-	@media screen and (min-width: 1366px) {
-		border-radius: @num*0.71px;
-	}
+  @media screen and (min-width: 1366px) {
+    border-radius: @num*0.71px;
+  }
 
-	@media screen and (min-width: 1440px) {
-		border-radius: @num*0.75px;
-	}
+  @media screen and (min-width: 1440px) {
+    border-radius: @num*0.75px;
+  }
 
-	@media screen and (min-width: 1920px) {
-		border-radius: @num*1px;
-	}
+  @media screen and (min-width: 1920px) {
+    border-radius: @num*1px;
+  }
 }
 
 // 阴影
 .shadow(@p1, @p2, @p3, @p4, @p5) {
-	@media screen and (min-width: 0px) and (max-width: 1280px) {
-		box-shadow: @p1*0.66px, @p2*0.66px, @p3*0.66px, @p4*0.66px, @p5;
-	}
+  @media screen and (min-width: 0px) and (max-width: 1280px) {
+    box-shadow: @p1*0.66px, @p2*0.66px, @p3*0.66px, @p4*0.66px, @p5;
+  }
 
-	@media screen and (min-width: 1280px) {
-		box-shadow: @p1*0.66px, @p2*0.66px, @p3*0.66px, @p4*0.66px, @p5;
-	}
+  @media screen and (min-width: 1280px) {
+    box-shadow: @p1*0.66px, @p2*0.66px, @p3*0.66px, @p4*0.66px, @p5;
+  }
 
-	@media screen and (min-width: 1366px) {
-		box-shadow: @p1*0.71px, @p2*0.71px, @p3*0.71px, @p4*0.71px, @p5;
-	}
+  @media screen and (min-width: 1366px) {
+    box-shadow: @p1*0.71px, @p2*0.71px, @p3*0.71px, @p4*0.71px, @p5;
+  }
 
-	@media screen and (min-width: 1440px) {
-		box-shadow: @p1*0.75px, @p2*0.75px, @p3*0.75px, @p4*0.75px, @p5;
-	}
+  @media screen and (min-width: 1440px) {
+    box-shadow: @p1*0.75px, @p2*0.75px, @p3*0.75px, @p4*0.75px, @p5;
+  }
 
-	@media screen and (min-width: 1920px) {
-		box-shadow: @p1*1px, @p2*1px, @p3*1px, @p4*1px, @p5;
-	}
+  @media screen and (min-width: 1920px) {
+    box-shadow: @p1*1px, @p2*1px, @p3*1px, @p4*1px, @p5;
+  }
 }
 
 .flex-l() {
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .flex-c() {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .flex-r() {
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .flex-bt() {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 @hover-color: #0035b7; //鼠标经过的颜色

@@ -5,6 +5,9 @@ import store from './store'
 import vuetify from './plugins/vuetify'
 import funcs from './api/funcs'
 import 'normalize.css/normalize.css'
+// 公用工具库
+import utils from './utils'
+Vue.prototype.$utils = utils
 
 Vue.config.productionTip = false
 // 全局注入，随处可用
@@ -16,5 +19,5 @@ new Vue({
   router,
   store,
   vuetify,
-  render: (h) => h(App),
+  render: (h) => h(App)
 }).$mount('#app')

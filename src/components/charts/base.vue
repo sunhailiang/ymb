@@ -12,7 +12,7 @@ import { BarChart } from 'echarts/charts'
 import {
   TitleComponent,
   TooltipComponent,
-  GridComponent,
+  GridComponent
 } from 'echarts/components'
 // 引入 Canvas 渲染器，注意引入 CanvasRenderer 或者 SVGRenderer 是必须的一步
 import { CanvasRenderer } from 'echarts/renderers'
@@ -22,7 +22,7 @@ echarts.use([
   TooltipComponent,
   GridComponent,
   BarChart,
-  CanvasRenderer,
+  CanvasRenderer
 ])
 export default {
   name: 'BaseChart',
@@ -30,12 +30,12 @@ export default {
     styles: {
       // 设置样式
       type: String,
-      default: 'width:400px;height:400px',
+      default: 'width:400px;height:400px'
     },
     option: {
       type: Object,
-      default: () => {},
-    },
+      default: () => {}
+    }
   },
   data() {
     return {}
@@ -43,7 +43,7 @@ export default {
   watch: {
     option(val) {
       this.chart.setOption(val)
-    },
+    }
   },
   created() {
     this.resize = debounce(this.resize, 300)
@@ -64,8 +64,8 @@ export default {
     },
     resize() {
       this
-    },
-  },
+    }
+  }
 }
 </script>
 <style lang="sass" scoped></style>

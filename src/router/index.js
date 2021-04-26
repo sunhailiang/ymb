@@ -22,7 +22,7 @@ const routes = [
     path: '/',
     name: 'workbench',
     component: () =>
-      import(/* webpackChunkName: "workbench" */ '../views/index.vue'),
+      import(/* webpackChunkName: "workbench" */ '../views/index.vue')
   },
   analysis,
   collaboration,
@@ -37,14 +37,14 @@ const routes = [
     name: '404',
     component: () => {
       return import(/* webpackChunkName: "user" */ '../404.vue')
-    },
-  },
+    }
+  }
 ]
 
 const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
-  routes,
+  routes
 })
 
 // 路由守卫配置

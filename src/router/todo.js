@@ -3,5 +3,5 @@ export default {
   name: 'todo',
   component: () => {
     return import(/* webpackChunkName: "user" */ '../views/todo')
-  },
+  }
 }

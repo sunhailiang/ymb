@@ -19,3 +19,14 @@
     okr
   </div>
 </template>
+<style lang="less" scoped></style>
+<script>
+export default {
+  data() {
+    return {}
+  },
+  beforeCreate() {},
+  mounted() {},
+  created() {}
+}
+</script>

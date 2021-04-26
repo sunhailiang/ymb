@@ -26,7 +26,7 @@ export default {
     this.$bus.$on('requestError', (obj) => {
       console.log('请求错误了', obj)
     })
-  },
+  }
 }
 </script>
 <style lang="less" scoped>

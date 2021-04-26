@@ -3,5 +3,5 @@ export default {
   name: 'collaboration',
   component: () => {
     return import(/* webpackChunkName: "user" */ '../views/collaboration')
-  },
+  }
 }

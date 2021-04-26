@@ -3,5 +3,5 @@ export default {
   name: 'kpi',
   component: () => {
     return import(/* webpackChunkName: "user" */ '../views/kpi')
-  },
+  }
 }

@@ -2,8 +2,9 @@
 
 ## 要求
 
-- 脚手架基本要求
+- 脚手架基本配置
 
+  - 统一字体
   - 支持骨架屏
     `page-skeleton-webpack-plugin + page-web-skeleton(谷歌)`
   - 打包速度快
@@ -42,6 +43,9 @@
     `resize-detector`
     `npm install echarts --save`
   - mock 封装
+  - 统一输出工具库
+    `utils`
+  - 统一封装指令
 
   # UI-vuetify 配置
 

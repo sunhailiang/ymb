@@ -3,5 +3,5 @@ export default {
   name: 'conclusion',
   component: () => {
     return import(/* webpackChunkName: "user" */ '../views/conclusion')
-  },
+  }
 }
