@@ -9,23 +9,22 @@ module.exports = {
     'eslint:recommended',
     '@vue/prettier'
   ],
-  // extends: ['plugin:vue/recommended', 'eslint:recommended'],
   parserOptions: {
     parser: 'babel-eslint'
   },
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'vue/max-attributes-per-line': [
-      2,
-      {
-        singleline: 10,
-        multiline: {
-          max: 1,
-          allowFirstLine: false
-        }
-      }
-    ],
+    // 'vue/max-attributes-per-line': [
+    //   2,
+    //   {
+    //     singleline: 10,
+    //     multiline: {
+    //       max: 1,
+    //       allowFirstLine: false
+    //     }
+    //   }
+    // ],
     'vue/singleline-html-element-content-newline': 'off',
     'vue/multiline-html-element-content-newline': 'off',
     'vue/name-property-casing': ['error', 'PascalCase'],
@@ -250,7 +249,7 @@ module.exports = {
       }
     ],
     'space-before-blocks': [2, 'always'], // 不以新行开始的块{前面要不要有空格
-    'space-before-function-paren': [2, 'never'], // 函数定义时括号前面要不要有空格
+    'space-before-function-paren': [0, 'never'], // 函数定义时括号前面要不要有空格
     'space-in-parens': [2, 'never'], // 小括号里面要不要有空格
     'space-infix-ops': 2, // 中缀操作符周围要不要有空格
     'space-unary-ops': [
@@ -296,9 +295,9 @@ module.exports = {
       'error',
       {
         html: {
-          void: 'never',
-          normal: 'any',
-          component: 'any'
+          void: 'always',
+          normal: 'never',
+          component: 'always'
         },
         svg: 'always',
         math: 'always'

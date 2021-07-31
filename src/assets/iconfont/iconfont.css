@@ -1,0 +1,65 @@
+@font-face {
+  font-family: 'iconfont'; /* Project id 2397230 */
+  src: url('iconfont.woff?t=1622599810957') format('woff'),
+    url('iconfont.ttf?t=1622599810957') format('truetype');
+}
+
+.iconfont {
+  font-family: 'iconfont' !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ymbicon-mima:before {
+  content: '\e60c';
+}
+
+.ymbduibi:before {
+  content: '\e715';
+}
+
+.ymbclose:before {
+  content: '\e601';
+}
+
+.ymbsuccess:before {
+  content: '\e66b';
+}
+
+.ymbMaskGroup:before {
+  content: '\e617';
+}
+
+.ymb404:before {
+  content: '\e600';
+}
+
+.ymbnotice:before {
+  content: '\e608';
+}
+
+.ymbhomeselected:before {
+  content: '\e607';
+}
+
+.ymbhomeselect:before {
+  content: '\e606';
+}
+
+.ymbpingjia:before {
+  content: '\e603';
+}
+
+.ymbxialajiantou:before {
+  content: '\e602';
+}
+
+.ymbbianji:before {
+  content: '\e68e';
+}
+
+.ymbguanbianniu:before {
+  content: '\e605';
+}

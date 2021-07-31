@@ -217,7 +217,7 @@
   }
 }
 
-// 内边距
+// 平均内边距
 .pd(@num) {
   @media screen and (min-width: 0px) and (max-width: 1280px) {
     padding: @num*0.66px;
@@ -239,7 +239,7 @@
     padding: @num*1px;
   }
 }
-
+// 自定义内边距
 .pa(@num1, @num2, @num3, @num4) {
   @media screen and (min-width: 0px) and (max-width: 1280px) {
     padding: @num1*0.66px @num2*0.66px @num3*0.66px @num4*0.66px;
@@ -261,7 +261,7 @@
     padding: @num1*1px @num2*1px @num3*1px @num4*1px;
   }
 }
-
+// 内左边距
 .pl(@num) {
   @media screen and (min-width: 0px) and (max-width: 1280px) {
     padding-left: @num*0.66px;
@@ -283,7 +283,7 @@
     padding-left: @num*1px;
   }
 }
-
+// 内右边距
 .pr(@num) {
   @media screen and (min-width: 0px) and (max-width: 1280px) {
     padding-right: @num*0.66px;
@@ -305,7 +305,7 @@
     padding-right: @num*1px;
   }
 }
-
+// 内部顶部边距
 .pt(@num) {
   @media screen and (min-width: 0px) and (max-width: 1280px) {
     padding-top: @num*0.66px;
@@ -327,7 +327,7 @@
     padding-top: @num*1px;
   }
 }
-
+// 内下边距
 .pb(@num) {
   @media screen and (min-width: 0px) and (max-width: 1280px) {
     padding-bottom: @num*0.66px;
@@ -372,7 +372,7 @@
     margin-left: @num*1px;
   }
 }
-
+// 上边距
 .mg-t(@num) {
   @media screen and (min-width: 0px) and (max-width: 1280px) {
     margin-top: @num*0.66px;
@@ -394,7 +394,7 @@
     margin-top: @num*1px;
   }
 }
-
+// 右边距
 .mg-r(@num) {
   @media screen and (min-width: 0px) and (max-width: 1280px) {
     margin-right: @num*0.66px;
@@ -416,7 +416,7 @@
     margin-right: @num*1px;
   }
 }
-
+// 下边距
 .mg-b(@num) {
   @media screen and (min-width: 0px) and (max-width: 1280px) {
     margin-bottom: @num*0.66px;
@@ -438,7 +438,7 @@
     margin-bottom: @num*1px;
   }
 }
-
+// 平均边距
 .mg(@num) {
   @media screen and (min-width: 0px) and (max-width: 1280px) {
     margin: @num*0.66px;
@@ -460,7 +460,7 @@
     margin: @num*1px;
   }
 }
-
+// 下边距
 .mg-t(@num, @num1) {
   @media screen and (min-width: 0px) and (max-width: 1280px) {
     margin: @num*0.66px @num1*0.66px;
@@ -482,7 +482,7 @@
     margin: @num*1px @num1*1px;
   }
 }
-
+// 自定义四边距
 .mg-f(@num, @num1, @num2, @num3) {
   @media screen and (min-width: 0px) and (max-width: 1280px) {
     margin: @num*0.66px @num1*0.66px @num2*0.66px @num3*0.66px;
@@ -505,7 +505,7 @@
   }
 }
 
-// 定位
+// 左侧
 .l(@num) {
   @media screen and (min-width: 0px) and (max-width: 1280px) {
     left: @num*0.66px;
@@ -527,7 +527,7 @@
     left: @num*1px;
   }
 }
-
+// 右侧
 .r(@num) {
   @media screen and (min-width: 0px) and (max-width: 1280px) {
     right: @num*0.66px;
@@ -549,7 +549,7 @@
     right: @num*1px;
   }
 }
-
+// 顶部
 .t(@num) {
   @media screen and (min-width: 0px) and (max-width: 1280px) {
     top: @num*0.66px;
@@ -571,7 +571,7 @@
     top: @num*1px;
   }
 }
-
+// 底部
 .b(@num) {
   @media screen and (min-width: 0px) and (max-width: 1280px) {
     bottom: @num*0.66px;
@@ -616,7 +616,7 @@
     border: @type @size*1px @c;
   }
 }
-
+// 边框顶部
 .bd-t(@type, @size, @c) {
   @media screen and (min-width: 0px) and (max-width: 1280px) {
     border-top: @type @size*0.66px @c;
@@ -639,6 +639,7 @@
   }
 }
 
+// 右边框
 .bd-r(@type, @size, @c) {
   @media screen and (min-width: 0px) and (max-width: 1280px) {
     border-right: @type @size*0.66px @c;
@@ -660,7 +661,7 @@
     border-right: @type @size*1px @c;
   }
 }
-
+// 左边框
 .bd-l(@type, @size, @c) {
   @media screen and (min-width: 0px) and (max-width: 1280px) {
     border-left: @type @size*0.66px @c;
@@ -683,6 +684,7 @@
   }
 }
 
+// 下边框
 .bd-b(@type, @size, @c) {
   @media screen and (min-width: 0px) and (max-width: 1280px) {
     border-bottom: @type @size*0.66px @c;
@@ -704,8 +706,8 @@
     border-bottom: @type @size*1px @c;
   }
 }
-
-.bd-r(@num) {
+// 边框圆角
+.bd-rd(@num) {
   @media screen and (min-width: 0px) and (max-width: 1280px) {
     border-radius: @num*0.66px;
   }
@@ -730,44 +732,66 @@
 // 阴影
 .shadow(@p1, @p2, @p3, @p4, @p5) {
   @media screen and (min-width: 0px) and (max-width: 1280px) {
-    box-shadow: @p1*0.66px, @p2*0.66px, @p3*0.66px, @p4*0.66px, @p5;
+    box-shadow: @p1*0.66px @p2*0.66px @p3*0.66px @p4*0.66px @p5;
   }
 
   @media screen and (min-width: 1280px) {
-    box-shadow: @p1*0.66px, @p2*0.66px, @p3*0.66px, @p4*0.66px, @p5;
+    box-shadow: @p1*0.66px @p2*0.66px @p3*0.66px @p4*0.66px @p5;
   }
 
   @media screen and (min-width: 1366px) {
-    box-shadow: @p1*0.71px, @p2*0.71px, @p3*0.71px, @p4*0.71px, @p5;
+    box-shadow: @p1*0.71px @p2*0.71px @p3*0.71px @p4*0.71px @p5;
   }
 
   @media screen and (min-width: 1440px) {
-    box-shadow: @p1*0.75px, @p2*0.75px, @p3*0.75px, @p4*0.75px, @p5;
+    box-shadow: @p1*0.75px @p2*0.75px @p3*0.75px @p4*0.75px @p5;
   }
 
   @media screen and (min-width: 1920px) {
-    box-shadow: @p1*1px, @p2*1px, @p3*1px, @p4*1px, @p5;
+    box-shadow: @p1*1px @p2*1px @p3*1px @p4*1px @p5;
   }
 }
+//字体大小
+.fs(@size) {
+  @media screen and (min-width: 0px) and (max-width: 1280px) {
+    font-size: @size*0.66px;
+  }
 
+  @media screen and (min-width: 1280px) {
+    font-size: @size*0.66px;
+  }
+
+  @media screen and (min-width: 1366px) {
+    font-size: @size*0.71px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: @size*0.75px;
+  }
+
+  @media screen and (min-width: 1920px) {
+    font-size: @size*1px;
+  }
+}
+// flex左对齐
 .flex-l() {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
-
+// flex居中
 .flex-c() {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
+// flex右对齐
 .flex-r() {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-
+// flex平均对齐
 .flex-bt() {
   display: flex;
   justify-content: space-between;
@@ -776,3 +800,20 @@
 
 @hover-color: #0035b7; //鼠标经过的颜色
 @b-c: #eaebf4; //边框线的颜色
+
+.ymb-container {
+  min-width: 1280px;
+}
+
+// 固定定位
+.p-f() {
+  position: fixed;
+}
+// 绝对定位
+.p-a() {
+  position: absolute;
+}
+// 相对定位
+.p-r() {
+  position: relative;
+}

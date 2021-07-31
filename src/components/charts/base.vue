@@ -53,17 +53,17 @@ export default {
     addListener(this.$refs.chart, this.resize)
   },
   beforeDestroy() {
-    removeListener(this.$refs.chart, this)
+    removeListener(this.$refs.chart, this.resize)
     this.chart.dispose()
     this.chart = null
   },
   methods: {
     renderChart() {
-      this.chart = echarts.init(this.$refs.chart, this.resize)
+      this.chart = echarts.init(this.$refs.chart)
       this.chart.setOption(this.option)
     },
     resize() {
-      this
+      this.chart.resize()
     }
   }
 }

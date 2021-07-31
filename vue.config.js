@@ -8,7 +8,7 @@ const isProd = process.env.NODE_ENV === 'production'
 const path = require('path')
 module.exports = {
   productionSourceMap: false,
-  publicPath: './',
+  publicPath: '/',
   outputDir: process.env.outputDir, // 生成文件的目录名称
   parallel: require('os').cpus().length > 1, // cpu大于1格式开启多线程打包
   pluginOptions: {
@@ -120,9 +120,9 @@ module.exports = {
         }
       }
     }
-    // 通用
+    // 只打包改过的文件
     plugins.push(new HashedModuleIdsPlugin())
-    // 开启构建缓存，除了首次构建，开发时热刷新速度飞快
+    // 开启构建缓存，除了首次构建，开发时热刷新
     plugins.push(new HardSourceWebpackPlugin())
 
     config.plugins = [...config.plugins, ...plugins]
@@ -158,17 +158,19 @@ module.exports = {
       config.plugin('loadshReplace').use(new LodashModuleReplacementPlugin())
     }
   },
-  // devServer: {
-  //   disableHostCheck: true,
-  //   proxy: {
-  //     '/index.php': {
-  //       target: 'http://106.55.173.177:8081/',
-  //       pathRewrite: { '^/index.php': '' },
-  //       changeOrigin: true,
-  //       secure: false,
-  //     },
-  //   },
-  // },
+  devServer: {
+    disableHostCheck: true,
+    useLocalIp: true,
+    port: 8888,
+    proxy: {
+      '/localproxy': {
+        target: 'http://58.33.106.56:19110',
+        pathRewrite: { '/localproxy': '' },
+        changeOrigin: true,
+        secure: false
+      }
+    }
+  },
   transpileDependencies: ['vuetify']
   // 公共代码抽离
 }

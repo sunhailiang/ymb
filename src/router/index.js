@@ -1,36 +1,26 @@
 import Vue from 'vue'
 import guards from './router.config'
 import VueRouter from 'vue-router'
-// 统计分析
-import analysis from './analysis'
-// 协作
-import collaboration from './collaboration'
-// 小结
-import conclusion from './conclusion'
-// 绩效
-import kpi from './kpi'
-// okr
-import okr from './okr'
-// todo
-import todo from './todo'
-// 工作台
-import workbench from './workbench'
+
+// 主页
+import admin from './modules/admin'
+// 布局
+import Layout from '../views/global/layout/index.vue'
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    name: 'workbench',
-    component: () =>
-      import(/* webpackChunkName: "workbench" */ '../views/index.vue')
+    name: 'layout',
+    component: Layout,
+    children: [
+      {
+        path: '/',
+        redirect: '/admin' // 页面重定向
+      },
+      admin
+    ]
   },
-  analysis,
-  collaboration,
-  conclusion,
-  kpi,
-  okr,
-  todo,
-  workbench,
   // 404页面
   {
     path: '*',

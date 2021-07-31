@@ -1,0 +1,94 @@
+// 重写elementui 注意只能写全局，统一的
+@blue:#3068ff;
+@grey:#DCDFE6;
+@white:#fff;
+@darkGrey:#606266;
+//自定义全局按钮
+.custom-button(@bgColor,@bdColoe,@color){
+  background-color: @bgColor !important;
+  border-color: @bdColoe !important;
+  color: @color !important;
+}
+.el-button--primary{
+  .custom-button(@blue,@blue,@white)
+}
+.el-button:focus,.el-button:hover,.el-button:active{
+  .custom-button(@white,@grey,@darkGrey)
+}
+.el-button--primary:focus,.el-button--primary:hover,.el-button--primary:active{
+  .custom-button(@blue,@blue,@white)
+}
+
+.el-loading-spinner {
+  /*这个是自己想设置的 gif 加载动图*/
+  background-image: url('../imgs/common/component-loading.gif');
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+  height: 50px;
+  width: 100%;
+  background-position: center;
+  top: 50%;
+}
+.el-loading-spinner .circular {
+  /*隐藏 之前  element-ui  默认的 loading 动画*/
+  display: none;
+}
+//重置 el-form 相关样式
+.el-form-item.is-error .el-input__inner, .el-form-item.is-error .el-input__inner:focus, .el-form-item.is-error .el-textarea__inner, .el-form-item.is-error .el-textarea__inner:focus, .el-message-box__input input.invalid, .el-message-box__input input.invalid:focus{
+  border-color:@grey !important;
+}
+.el-form-item.is-focus .el-input__inner, .el-form-item.is-error .el-input__inner:focus, .el-form-item.is-error .el-textarea__inner, .el-form-item.is-error .el-textarea__inner:focus, .el-message-box__input input.invalid, .el-message-box__input input.invalid:focus{
+  border-color:@grey  !important;
+}
+.el-input.is-active .el-input__inner, .el-input__inner:focus{
+  border-color:@grey  !important;
+}
+.el-input .el-input__inner, .el-input__inner:hover{
+  border-color:@grey !important;
+}
+.tel-input.el-input {
+  .el-input-group__prepend {
+    background: @white;
+    color: @darkGrey;
+    font-size: 14px;
+  }
+  .el-input__inner {
+
+    border-left: 0;
+    padding-left: 0;
+  }
+}
+.next-step.el-button {
+  background: @blue;
+  width: 100%;
+  padding: 0;
+  height: 35px;
+  line-height: 35px;
+}
+.next-step.el-button:focus,.next-step.el-button:hover{
+  background: @blue;
+}
+.el-button.next-step.is-disabled {
+  background: #bfbfbf !important;
+  border-color: #bfbfbf !important;
+}
+//重置 文字按钮 样式
+.el-button--text{
+  color: @blue;
+}
+//重置 el-checkbox 样式
+.el-checkbox__input.is-checked .el-checkbox__inner, .el-checkbox__input.is-indeterminate .el-checkbox__inner{
+  background-color: @blue;
+  border-color: @blue;
+}
+.el-checkbox__input.is-checked+.el-checkbox__label{
+  color: #666;
+}
+.el-checkbox__input.is-checked+.el-checkbox__label{
+  color: @darkGrey !important;
+  font-weight: normal;
+}
+.el-checkbox__input.is-checked .el-checkbox__inner, .el-checkbox__input.is-indeterminate .el-checkbox__inner{
+  background-color: @blue !important;
+  border-color: @blue !important;
+}
